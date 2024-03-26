@@ -3,6 +3,11 @@
     // && is the equivalent of AND() in excel
     // || is the equivalent of OR() in excel
 
+// ADD TO STRING TO EXISTING STRING
+    let languages = "HTML CSS";
+        languages = languages + " JS"  // using the existing string within 'languages' and then adding " JS"
+        console.log(languages);  // result is now "HTML CSS JS"
+
 // ADD ITEM TO ARRAY
     activeUsers.push("ted"); // - arrayName.push() adds ted to the array
 
@@ -48,4 +53,29 @@
         let digit = doorCode.pop();
         console.log(digit);
 
-// 
+// DISPLAY EVERY ELEMENT IN AN ARRAY
+    const supplies = ["pencil", "book"];
+        for (let i = 0; i < supplies.length; i++) {
+        console.log(supplies[i]);
+    }
+
+// ADDING A CERTAIN NUMBER WHEN CONDITIONS ARE MET
+    let counter = 10;
+        while (counter <= 40) {
+        console.log(counter);
+        counter += 10;  // "+=" is the symbol for adding, then we specify "10" to be added when conditions are met
+        }               // "-=" is the symbol for substracting
+
+// ADDING ON TO A STRING with "+="
+    let friends2 = "Mutual friends:";
+    friends2 += " Jan,";
+    friends2 += " Brett,";
+    friends2 += " Michael";
+    console.log(friends2);
+
+// WHILE LOOP - BASIC EXAMPLE
+    let animal = true;
+    while (false) {
+    console.log("false")
+    }
+
