@@ -28,7 +28,7 @@
         console.log("Ugh, more work!");
         }
 
-// FOR LOOP
+// BASIC FOR LOOP SYNTAX
     const friends = ["Ana", "Eve", "Sam"];
     for (let i = 0; i < friends.length; i++) {  // (initialization; continuation test (aka conditional statement); update)
         console.log(friends[i]); // log the array index item when criteria met
@@ -79,3 +79,41 @@
     console.log("false")
     }
 
+// BASIC FUNCTION SYNTAX
+    function greetUser() {    // camelCase name, establishes what the function does
+        console.log("Good morning Anna");
+        console.log("Welcome back");
+    }
+
+    greetUser();  // calls and runs the function
+
+// FUNCTIONS: USING PARAMETERS
+    function greet(name) {} // runs the greet function for the "name" parameter
+
+// RETURNING SOMETHING FROM A FUNCTION
+    function userAge(number) {
+        const age = "User age: " + number;
+        return age;   // returns the variable 
+    }
+
+// RETURN FROM FUNCTION AND PRINT TO CONSOLE
+    function userAge(number) {
+        const age = "User age: " + number;
+        return age;  // returns a single value
+    }
+    console.log(userAge(22));
+
+// RETURN FROM FUNCTION AND STORE AS VALUE
+    function userAge(number) {
+        const age = "User age: " + number;
+        return age;  // returns a single value
+    }
+    const result = userAge(29);
+    console.log(result);
+
+// FUNCTION NAMING GUIDELINES
+    // should include some verb at beginning (calculateDifference, sumTotal, etc)
+    // similar functions should include same verb (calculateSum, sumProfit, etc)
+    // boolean functions generally start with "is" (isFreezing, isEqual, etc)
+
+//  
