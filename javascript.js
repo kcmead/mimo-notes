@@ -185,3 +185,50 @@
         return arr[0];
     }
     console.log(returnZeroIndex([5, 6, 3, 8]));
+
+// OBJECT PROPERTIES
+    const myCat = {
+        name: "sunny",    // these are the properties of the object
+        intelligence: "minimal",
+        hungry: "always"
+    }
+
+// OBJECT WITH A FUNCTION STORED WITHIN IT
+    const dog = {
+        name: "Bo",
+        bark: function() {
+        console.log("woof woof!");
+        }
+    };
+    dog.bark();
+
+// WHAT DO WE CALL FUNCTIONS INSIDE AN OBJECT?
+    // the object's method
+
+// USING "THIS" (to ONLY be used inside the object's method)
+    const myCereal = {
+        name: "Trix",
+        changeAndDisplay: function() {
+            this.name = "Cap'n Crunch";
+            console.log(this.name);
+        }
+    };
+    myCereal.changeAndDisplay();
+
+// JSON = JavaScript Object Notation
+
+// CONVERTING JS OBJECT INTO JSON WITH JSON.STRINGIFY() METHOD
+    const concert = {
+        band: "Super Carrots",
+        music: "Indie"
+    };
+    console.log(concert);
+    console.log(JSON.stringify(concert));
+
+       // result:  { band: 'Super Carrots', music: 'Indie' }
+       //          {"band":"Super Carrots","music":"Indie"}
+
+// CONVERTING JSON INTO JS OBJECT with JSON.PARSE() METHOD
+    const doggo = '{"name" : "Rocko": "age" : 3}'
+    console.log(JSON.parse(doggo));
+
