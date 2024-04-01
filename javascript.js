@@ -116,4 +116,72 @@
     // similar functions should include same verb (calculateSum, sumProfit, etc)
     // boolean functions generally start with "is" (isFreezing, isEqual, etc)
 
-//  
+//  CREATING OBJECS
+    const cat = {
+        name: "Garfield",   // all of these are called "properties" of the object
+        favoriteFood: "lasagna",
+        color: "orange",
+        owner: "Jon Arbuckle"
+    }
+
+// FUNCTION THAT CHECKS TO SEE IF VARIABLES MEET CRITERIA AND PRINTS RESULT
+    function checkPoints() {
+        const points = 7;
+        const required = 10;
+        console.log("Requirement reached");
+        console.log(points > required);
+       }
+       checkPoints();
+
+// FUNCTION THAT COMBINES VARIABLES AND PRINTS CONCATENATED RESULT
+    function movieFinder() {
+        const genre = "comedy";
+        const text = "Finding " + genre + " movies";
+        console.log(text);
+    }
+    movieFinder();
+
+// FUNCTION THAT USES PARAMETER FROM ORIGINAL FUNCTION
+    function makeGerund(word) {    // word is then used in the const result below
+        const result = word + "ing";
+        console.log(result);
+    }
+    makeGerund("Jump");
+
+// PASSING A VALUE TO THE FUNCTION
+    function accomType(type) {
+        const rating = "5 star";
+        console.log(rating + " " + type);
+    }
+    accomType("hotel");  // in quotes
+
+// ANOTHER EXAMPLE OF PASSING A VALUE TO THE FUNCTION    
+    function myFunction1(type) {
+        console.log(type + " is what was chosen here");
+      }
+      
+      myFunction1("hotel")
+
+      // Log output = "hotel is what was chosen here" 
+
+// FUNCTION USING PARAMETERS IN ORDER
+    function addToPot(first, second, third) {
+        console.log("Boil " + first);
+        console.log("Add " + second);
+        console.log("Cook " + third);
+    }
+    addToPot("water", "salt", "pasta" );
+
+// RETURN THE LENGTH OF THE ARRAY
+    function getArrayLength(inputArr) {
+        return (inputArr.length);
+       }
+       console.log("Length of array: " + getArrayLength([1, 25, 3,
+        5
+       ]));
+
+// RETURN nTH ITEM IN ARRAY
+    function returnZeroIndex(arr) {
+        return arr[0];
+    }
+    console.log(returnZeroIndex([5, 6, 3, 8]));
