@@ -33,3 +33,30 @@ print(new_status)
 followers = "53"
 following = "69"
 print("Followers: " + followers + " and Following: " + following)
+
+# add numbers together
+number_of_computers = 5 + 1
+print(number_of_computers)  # shows 6 in console
+
+# multiplying numbers
+percent = 0.25 * 100
+
+# dividing 
+number_from_percent = 25 / 100
+
+# storing calculations in variables
+private = 3
+public = 10
+total = private + public
+print("Total Posts:")
+print(total)
+
+# True and False
+powered_on = True # first letters, T and F, are capitalized
+
+# to negate a True or False - not
+print(not True)
+
+available = True
+print(not available)
+
