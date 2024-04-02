@@ -60,3 +60,24 @@ print(not True)
 available = True
 print(not available)
 
+# comparing numbers 
+5 == 5
+print(10 == 10)  # True
+print(9 == 10)   # False
+print(1 != 10)  # True (not equal to)
+
+# f-strings (short formatted strings) - display expressions like adding string and number without errors
+print(f"{2} new messages")  # shows up as  "2 new messages"
+
+new_messages = 2
+print(f"{new_messages} new messages")  # shows up as "2 new messages"
+
+new_msg = 5
+read_msg = 2
+print(f"{new_msg - read_msg} unread messages")
+
+movie = "Star Wars"
+display = f"Airing Tonight: {movie}"
+print(display)
+
+
