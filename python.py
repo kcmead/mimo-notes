@@ -33,3 +33,51 @@ print(new_status)
 followers = "53"
 following = "69"
 print("Followers: " + followers + " and Following: " + following)
+
+# add numbers together
+number_of_computers = 5 + 1
+print(number_of_computers)  # shows 6 in console
+
+# multiplying numbers
+percent = 0.25 * 100
+
+# dividing 
+number_from_percent = 25 / 100
+
+# storing calculations in variables
+private = 3
+public = 10
+total = private + public
+print("Total Posts:")
+print(total)
+
+# True and False
+powered_on = True # first letters, T and F, are capitalized
+
+# to negate a True or False - not
+print(not True)
+
+available = True
+print(not available)
+
+# comparing numbers 
+5 == 5
+print(10 == 10)  # True
+print(9 == 10)   # False
+print(1 != 10)  # True (not equal to)
+
+# f-strings (short formatted strings) - display expressions like adding string and number without errors
+print(f"{2} new messages")  # shows up as  "2 new messages"
+
+new_messages = 2
+print(f"{new_messages} new messages")  # shows up as "2 new messages"
+
+new_msg = 5
+read_msg = 2
+print(f"{new_msg - read_msg} unread messages")
+
+movie = "Star Wars"
+display = f"Airing Tonight: {movie}"
+print(display)
+
+
