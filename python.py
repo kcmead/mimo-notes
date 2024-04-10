@@ -80,4 +80,36 @@ movie = "Star Wars"
 display = f"Airing Tonight: {movie}"
 print(display)
 
+# Float is another number type to describe numbers with one or more digits after the decimal point, like pi
+pi = 3.14159
+
+# Check the data type of a value
+is_ready = True
+print(type(is_ready))
+
+# convert string value to an integer
+age = "17"
+print(type(age))
+converted_age = int(age)
+print(type(converted_age))
+print(converted_age < 18)
+
+# convert integer to a string
+password = 123456
+old_password = "12sd34"
+print((str(password)) == old_password)
+print(type(password))
+print(type(old_password))
+
+# add a decimal by using float
+weeks = 10
+print(float(weeks))
+    # would show "10.0" in the terminal
+
+# using 'int()' on an boolean would return 1 for True and 0 for False
+member = True
+value = int(member) 
+    # would show 1 in the terminal
+
+
 
